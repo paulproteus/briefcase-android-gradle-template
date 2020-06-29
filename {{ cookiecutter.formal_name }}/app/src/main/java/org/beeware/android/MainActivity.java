@@ -233,8 +233,6 @@ FileInputStream(stdlibLastFilenamePath), StandardCharsets.UTF_8));
         // Change away from the splash screen theme to the app theme.
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
-        LinearLayout layout = new LinearLayout(this);
-        this.setContentView(layout);
         singletonThis = this;
         try {
             Map<String, File> paths = getPythonPaths();
